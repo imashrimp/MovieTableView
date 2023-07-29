@@ -2,15 +2,12 @@
 //  MovieTableViewCell.swift
 //  CustomTableViewCell
 //
-//  Created by 권현석 on 2023/07/28.
+//  Created by 권현석 on 2023/07/29.
 //
 
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
-
-    static let identifier = "MovieTableViewCell"
-    
     
     @IBOutlet var posterImageView: UIImageView!
     @IBOutlet var movieInfoView: UIView!
@@ -20,46 +17,44 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet var seperationBar: [UILabel]!
     @IBOutlet var runningTimeLabel: UILabel!
     @IBOutlet var rateLabel: UILabel!
-    //TODO: 이거 텍스트뷰로 바꿔서 편집 불가능하게 할 수 있으면 해보자
-    @IBOutlet var overviewLabel: UILabel!
+    @IBOutlet var overivewTextView: UITextView!
     
     func configureImageView() {
-        posterImageView.backgroundColor = .clear
-        posterImageView.contentMode = .scaleAspectFit
+
     }
     
-    func configureLabelView() {
+    func configureCellUIAttribute() {
+        posterImageView.backgroundColor = .clear
+        posterImageView.contentMode = .scaleAspectFit
         movieInfoView.backgroundColor = .clear
         movieInforStackView.backgroundColor = .clear
         movieTitleLabel.backgroundColor = .clear
         releaseDateLabel.backgroundColor = .clear
         runningTimeLabel.backgroundColor = .clear
         rateLabel.backgroundColor = .clear
-        overviewLabel.backgroundColor = .clear
+        overivewTextView.backgroundColor = .clear
         
         for i in 0..<seperationBar.count {
             seperationBar[i].backgroundColor = .clear
-        }
-    }
-    
-    func configureLabelAttribute() {
-        movieTitleLabel.font = .systemFont(ofSize: 20, weight: .heavy)
-        
-        for i in 0..<seperationBar.count {
             seperationBar[i].font = .systemFont(ofSize: 20, weight: .bold)
-            seperationBar[i].text = "|"
         }
-        overviewLabel.numberOfLines = 0
+        
+        movieTitleLabel.font = .systemFont(ofSize: 20, weight: .heavy)
+        overivewTextView.showsHorizontalScrollIndicator = false
+        overivewTextView.isEditable = false
+        overivewTextView.isSelectable = false
+        overivewTextView.bounces = false
     }
     
     func setUIContents(data: Movie) {
         posterImageView.image = UIImage(named: data.title)
         movieTitleLabel.text = data.title
         releaseDateLabel.text = data.releaseDate
+        for i in 0..<seperationBar.count {
+            seperationBar[i].text = "|"
+        }
         runningTimeLabel.text = "\(data.runtime)분"
         rateLabel.text = "\(data.rate)점"
-        overviewLabel.text = data.overview
+        overivewTextView.text = data.overview
     }
-    
-
 }

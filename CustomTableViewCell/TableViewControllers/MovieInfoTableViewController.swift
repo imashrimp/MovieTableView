@@ -14,6 +14,7 @@ class MovieInfoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 200
+        tableView.bounces = false
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,11 +24,12 @@ class MovieInfoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
         
+        cell.isUserInteractionEnabled = false
+        
         let movieData = MovieList().movie[indexPath.row]
         
         cell.configureImageView()
-        cell.configureLabelView()
-        cell.configureLabelAttribute()
+        cell.configureCellUIAttribute()
         cell.setUIContents(data: movieData)
         
         return cell
