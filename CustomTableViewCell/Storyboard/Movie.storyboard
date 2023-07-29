@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Movie Info Table View Controller-->
         <scene sceneID="EqU-Ye-0rt">
             <objects>
-                <tableViewController id="7sb-zt-via" sceneMemberID="viewController">
+                <tableViewController id="7sb-zt-via" customClass="MovieInfoTableViewController" customModule="CustomTableViewCell" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="FdO-AF-ybc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,7 +27,7 @@
                                             <rect key="frame" x="20" y="11" width="353" height="219"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-U6-eW5">
-                                                    <rect key="frame" x="0.0" y="8" width="118.33333333333333" height="203"/>
+                                                    <rect key="frame" x="0.0" y="8" width="122.33333333333333" height="203"/>
                                                     <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpC-H9-7yZ">
@@ -107,7 +107,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="XfN-U6-eW5" secondAttribute="bottom" id="F3L-d0-lZh"/>
                                                 <constraint firstItem="XfN-U6-eW5" firstAttribute="top" secondItem="goE-PH-psN" secondAttribute="topMargin" id="Gap-31-nT3"/>
-                                                <constraint firstItem="fpC-H9-7yZ" firstAttribute="leading" secondItem="XfN-U6-eW5" secondAttribute="trailing" constant="4" id="HcF-Sw-jAa"/>
+                                                <constraint firstItem="fpC-H9-7yZ" firstAttribute="leading" secondItem="XfN-U6-eW5" secondAttribute="trailing" id="HcF-Sw-jAa"/>
                                                 <constraint firstItem="XfN-U6-eW5" firstAttribute="leading" secondItem="goE-PH-psN" secondAttribute="leading" id="Owd-xY-rfV"/>
                                                 <constraint firstItem="fpC-H9-7yZ" firstAttribute="bottom" secondItem="goE-PH-psN" secondAttribute="bottomMargin" id="djt-gv-Ath"/>
                                                 <constraint firstItem="fpC-H9-7yZ" firstAttribute="top" secondItem="goE-PH-psN" secondAttribute="topMargin" id="jre-cb-bKr"/>
@@ -124,8 +124,15 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="movieInfoView" destination="fpC-H9-7yZ" id="RIi-4K-6I7"/>
+                                    <outlet property="movieInforStackView" destination="esO-hc-sqg" id="jiy-8s-gEB"/>
                                     <outlet property="movieTitleLabel" destination="xpU-cE-JgH" id="FPK-5Q-Qbo"/>
+                                    <outlet property="overviewLabel" destination="ERL-ih-TqT" id="UfR-Xs-0O4"/>
                                     <outlet property="posterImageView" destination="XfN-U6-eW5" id="REe-PN-zB1"/>
+                                    <outlet property="rateLabel" destination="PYV-rB-FwD" id="0uj-s1-8wo"/>
+                                    <outlet property="releaseDateLabel" destination="hds-QF-S5u" id="aOd-Ok-mjO"/>
+                                    <outlet property="runningTimeLabel" destination="xca-QC-EFz" id="1Tw-22-Cj9"/>
+                                    <outletCollection property="seperationBar" destination="yBT-QU-szi" collectionClass="NSMutableArray" id="AEh-1f-qvp"/>
+                                    <outletCollection property="seperationBar" destination="NYC-Wh-CBa" collectionClass="NSMutableArray" id="IDu-Xv-EsJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
