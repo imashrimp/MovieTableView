@@ -23,24 +23,12 @@ class MovieInfoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
         
+        let movieData = MovieList().movie[indexPath.row]
+        
         cell.configureImageView()
         cell.configureLabelView()
-        cell.configureLabel()
-        
-        let movie = MovieList().movie
-        let item = movie[indexPath.row]
-        
-        cell.seperationBar[0].text = "|"
-        cell.seperationBar[1].text = "|"
-        
-        
-        cell.posterImageView.image = UIImage(named: item.title)
-        cell.movieTitleLabel.text = item.title
-        cell.releaseDateLabel.text = item.releaseDate
-        cell.runningTimeLabel.text = "\(item.runtime)분"
-        cell.rateLabel.text = "\(item.rate)점"
-        cell.overviewLabel.text = item.overview
-        
+        cell.configureLabelAttribute()
+        cell.setUIContents(data: movieData)
         
         return cell
     }

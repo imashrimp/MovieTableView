@@ -22,7 +22,6 @@
 		172F6AAE2A73B87300DECFBA /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F6AAD2A73B87300DECFBA /* MovieList.swift */; };
 		172F6AB32A73B92C00DECFBA /* MovieInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F6AB22A73B92C00DECFBA /* MovieInfoTableViewController.swift */; };
 		173C20582A73BA3300A47E3C /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C20572A73BA3300A47E3C /* MovieTableViewCell.swift */; };
-		173C205A2A74D2F800A47E3C /* ImageAssetSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173C20592A74D2F800A47E3C /* ImageAssetSingleton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		172F6AAD2A73B87300DECFBA /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		172F6AB22A73B92C00DECFBA /* MovieInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoTableViewController.swift; sourceTree = "<group>"; };
 		173C20572A73BA3300A47E3C /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = SOURCE_ROOT; };
-		173C20592A74D2F800A47E3C /* ImageAssetSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetSingleton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +75,14 @@
 			isa = PBXGroup;
 			children = (
 				173C20572A73BA3300A47E3C /* MovieTableViewCell.swift */,
+				172F6AA12A73ABE900DECFBA /* CustomTableViewCell.swift */,
 				172F6AB12A73B90200DECFBA /* TableViewControllers */,
 				172F6A872A73A42A00DECFBA /* AppDelegate.swift */,
 				172F6A892A73A42A00DECFBA /* SceneDelegate.swift */,
 				172F6A8B2A73A42A00DECFBA /* ViewController.swift */,
 				172F6AA92A73B7EE00DECFBA /* Storyboard */,
 				172F6AAA2A73B80800DECFBA /* Data */,
-				172F6AA12A73ABE900DECFBA /* CustomTableViewCell.swift */,
 				172F6A902A73A42B00DECFBA /* Assets.xcassets */,
-				173C20592A74D2F800A47E3C /* ImageAssetSingleton.swift */,
 				172F6A922A73A42B00DECFBA /* LaunchScreen.storyboard */,
 				172F6A952A73A42B00DECFBA /* Info.plist */,
 			);
@@ -203,7 +200,6 @@
 				172F6A8A2A73A42A00DECFBA /* SceneDelegate.swift in Sources */,
 				172F6AAC2A73B81700DECFBA /* Movie.swift in Sources */,
 				173C20582A73BA3300A47E3C /* MovieTableViewCell.swift in Sources */,
-				173C205A2A74D2F800A47E3C /* ImageAssetSingleton.swift in Sources */,
 				172F6A9E2A73A7E500DECFBA /* CustomTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

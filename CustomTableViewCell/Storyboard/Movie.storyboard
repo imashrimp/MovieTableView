@@ -34,14 +34,14 @@
                                                     <rect key="frame" x="122.33333333333336" y="8" width="230.66666666666663" height="203"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpU-cE-JgH">
-                                                            <rect key="frame" x="8" y="7.9999999999999982" width="41.333333333333336" height="20.333333333333329"/>
+                                                            <rect key="frame" x="8" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
                                                             <color key="backgroundColor" systemColor="systemRedColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="esO-hc-sqg">
-                                                            <rect key="frame" x="8" y="32.333333333333336" width="214.66666666666666" height="20.333333333333336"/>
+                                                            <rect key="frame" x="8" y="24.333333333333336" width="214.66666666666666" height="20.333333333333336"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hds-QF-S5u">
                                                                     <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
@@ -82,7 +82,7 @@
                                                             <color key="backgroundColor" systemColor="linkColor"/>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERL-ih-TqT">
-                                                            <rect key="frame" x="8" y="56.666666666666671" width="214.66666666666666" height="138.33333333333331"/>
+                                                            <rect key="frame" x="8" y="48.666666666666671" width="214.66666666666666" height="154.33333333333331"/>
                                                             <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -91,13 +91,13 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemMintColor"/>
                                                     <constraints>
+                                                        <constraint firstItem="xpU-cE-JgH" firstAttribute="top" secondItem="fpC-H9-7yZ" secondAttribute="top" id="J7a-d3-xPh"/>
                                                         <constraint firstItem="esO-hc-sqg" firstAttribute="leading" secondItem="fpC-H9-7yZ" secondAttribute="leadingMargin" id="PTN-fg-nxF"/>
                                                         <constraint firstItem="esO-hc-sqg" firstAttribute="top" secondItem="xpU-cE-JgH" secondAttribute="bottom" constant="4" id="TyJ-FH-heI"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="ERL-ih-TqT" secondAttribute="trailing" id="YEx-5i-YHD"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ERL-ih-TqT" secondAttribute="bottom" id="hxE-4z-Y7P"/>
                                                         <constraint firstItem="ERL-ih-TqT" firstAttribute="top" secondItem="esO-hc-sqg" secondAttribute="bottom" constant="4" id="jIb-QI-aLk"/>
                                                         <constraint firstItem="ERL-ih-TqT" firstAttribute="leading" secondItem="fpC-H9-7yZ" secondAttribute="leadingMargin" id="kcf-Q6-mFm"/>
-                                                        <constraint firstItem="xpU-cE-JgH" firstAttribute="top" secondItem="fpC-H9-7yZ" secondAttribute="topMargin" id="rcq-Jx-peD"/>
-                                                        <constraint firstItem="ERL-ih-TqT" firstAttribute="bottom" secondItem="fpC-H9-7yZ" secondAttribute="bottomMargin" id="tFE-Jy-SG0"/>
                                                         <constraint firstItem="xpU-cE-JgH" firstAttribute="leading" secondItem="fpC-H9-7yZ" secondAttribute="leadingMargin" id="vlV-dw-Tdd"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="esO-hc-sqg" secondAttribute="trailing" id="w6q-Oj-rHj"/>
                                                     </constraints>

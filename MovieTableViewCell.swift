@@ -42,14 +42,23 @@ class MovieTableViewCell: UITableViewCell {
         }
     }
     
-    func configureLabel() {
+    func configureLabelAttribute() {
         movieTitleLabel.font = .systemFont(ofSize: 20, weight: .heavy)
         
         for i in 0..<seperationBar.count {
             seperationBar[i].font = .systemFont(ofSize: 20, weight: .bold)
+            seperationBar[i].text = "|"
         }
-        
         overviewLabel.numberOfLines = 0
+    }
+    
+    func setUIContents(data: Movie) {
+        posterImageView.image = UIImage(named: data.title)
+        movieTitleLabel.text = data.title
+        releaseDateLabel.text = data.releaseDate
+        runningTimeLabel.text = "\(data.runtime)분"
+        rateLabel.text = "\(data.rate)점"
+        overviewLabel.text = data.overview
     }
     
 
