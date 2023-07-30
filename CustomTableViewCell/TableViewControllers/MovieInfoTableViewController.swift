@@ -24,8 +24,6 @@ class MovieInfoTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieTableViewCell") as! MovieTableViewCell
         
-        cell.isUserInteractionEnabled = false
-        
         let movieData = MovieList().movie[indexPath.row]
         
         cell.configureImageView()

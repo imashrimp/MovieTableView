@@ -10,7 +10,7 @@ import UIKit
 class MovieTableViewCell: UITableViewCell {
     
     @IBOutlet var posterImageView: UIImageView!
-    @IBOutlet var movieInfoView: UIView!
+//    @IBOutlet var movieInfoView: UIView!
     @IBOutlet var movieTitleLabel: UILabel!
     @IBOutlet var movieInforStackView: UIStackView!
     @IBOutlet var releaseDateLabel: UILabel!
@@ -26,7 +26,7 @@ class MovieTableViewCell: UITableViewCell {
     func configureCellUIAttribute() {
         posterImageView.backgroundColor = .clear
         posterImageView.contentMode = .scaleAspectFit
-        movieInfoView.backgroundColor = .clear
+//        movieInfoView.backgroundColor = .clear
         movieInforStackView.backgroundColor = .clear
         movieTitleLabel.backgroundColor = .clear
         releaseDateLabel.backgroundColor = .clear
